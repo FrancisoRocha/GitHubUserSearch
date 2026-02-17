@@ -1,0 +1,26 @@
+:root{
+
+    /*? NEUTRAL */
+    --neutral-900: #141D2F;
+    --neutral-800: #1E2A47;
+    --neutral-700: #2B3442;
+    --neutral-500: #4B6A9B;
+    --neutral-300: #697C9A;
+    --neutral-200: #90A4D4;
+    --neutral-100: #F6F8FF;
+    --neutral-0: #FFFFFF;
+
+    /*? BLUE */
+    --blue-300: #60ABFF;
+    --blue-500: #0079FF;
+
+    /*? RED */
+    --red-500: #F74646;
+
+    /** FONT FAMILY */
+    --space: "Space Mono", monospace;
+
+}
+
+
+

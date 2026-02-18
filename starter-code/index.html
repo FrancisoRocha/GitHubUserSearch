@@ -14,6 +14,88 @@
 <body>
 
 
+  <div class="container">
+
+    <!-- HEADER -->
+      <header class="header__container">
+        <h1 class="logo__title">devfinder</h1>
+        <button class="theme">
+          Dark
+          <img src="./assets/light/icon-moon.svg" alt="Icon Thme" class="thme__icon">
+        </button>
+      </header>
+
+      <!-- SEARCH BAR -->
+      <div class="search__bar--container">
+        <form class="container__form">
+          <img src="./assets/icon-search.svg" alt="icon search bar" class="icon__search">
+          <label class="search" for="searchInput">Searchs</label>
+          <input type="text" placeholder="Search GitHub username…" name="searchInput" id="searchInput">
+          <button class="button__search">Search</button>
+        </form>
+      </div>
+
+      <!-- PROFILE SECTION -->
+      <div class="profile__section--container">
+        <img src="./assets/bitmap.png" alt="avatar" class="avatar__profile">
+
+        <div class="profile__section--info">
+
+          <!-- PROFILE HEADER -->
+          <div class="profile__header">
+            <div class="user__details">
+              <h3 class="name">The Octocat</h3>
+              <p class="user__name">@<span class="user">octocat</span></p>
+            </div>
+            <p class="account__creation">Joined 25 Jan 2011</p>
+          </div>
+
+          <!-- BIOGRAFIA -->
+          <div class="profile__bio">
+            <p class="bio">This profile has no bio</p>
+          </div>
+
+          <!-- PROFILE STATS -->
+          <dl class="profile__stats">
+            <div class="repos__stats">
+              <dt class="repos">Repos</dt>
+              <dd class="number__repos">8</dd>
+            </div>
+            <div class="followers__stats">
+              <dt class="followers">Followers</dt>
+              <dd class="number__followers">3938</dd>
+            </div>
+            <div class="following__stats">
+              <dt class="following">Following</dt>
+              <dd class="number__following">9</dd>
+            </div>
+          </dl>
+
+          <!-- LINKS -->
+          <div class="links__container">
+            <div class="location__link">
+              <img src="./assets/light/icon-location-light.svg" alt="icon location" class="icon location">
+              <p class="location">San Francisco</p>
+            </div>
+            <div class="twitter__link">
+              <img src="./assets/light/icon-twitter-light.svg" alt="icon twitter" class="icon twitter">
+              <p class="twitter">Not Available</p>
+            </div>
+            <div class="blog__link">
+              <img src="./assets/light/icon-blog-light.svg" alt="icon blog" class="icon blog">
+              <a href="https://github.blog" target="_blank" rel="noopener noreferrer" id="blog">https://github.blog</a>
+            </div>
+            <div class="company__link">
+              <img src="./assets/light/icon-company-light.svg" alt="icon company" class="icon company">
+              <a href="https://github.com/github" target="_blank" rel="noopener noreferrer" id="company">@github</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
 
 </body>
 </html>

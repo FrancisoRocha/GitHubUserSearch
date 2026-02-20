@@ -1,0 +1,20 @@
+
+
+@media(min-width: 768px){
+    body{
+        padding: 4rem 3.2rem;
+    }
+}
+
+/* TODO: Corregir bien el padding */
+@media(min-width: 1024px){
+    body{
+        padding: 10rem 10rem;
+    }
+}
+
+@media(min-width: 768px){
+    .container{
+        gap: 4rem;
+    }
+}

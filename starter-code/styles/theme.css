@@ -1,0 +1,53 @@
+
+/* --- LIGHT THEME --- */
+body.light{
+    --color-bg: #F6F8FF;
+    
+    /* --- HEADER --- */
+    --color-title: #141D2F;
+    --color-theme-text: #4B6A9B;
+
+    /* --- SEARCH BAR --- */
+    --color-search-bg: #FFFFFF;
+    --color-search-placeholder: #4B6A9B;
+    
+    /* --- PROFILE SECTION --- */
+    --color-profile-bg: #FFFFFF;
+    --color-profile-title: #2B3442;
+    --color-profile-user: #0079FF;
+    --color-profile-info: #4B6A9B;
+    --color-profile-numbers: #2B3442;
+
+    /* --- LINKS --- */
+    --color-link-location: #4B6A9B;
+    --color-link-twitter: #4B6A9B;
+    --color-link-blog: #4B6A9B;
+    --color-link-company: #4B6A9B;
+}
+
+
+/* --- DARK THEME --- */
+body.dark{
+    --color-bg: #141D2F;
+
+    /* --- HEADER --- */
+    --color-title: #FFFFFF;
+    --color-theme: #90A4D4;
+
+    /* --- SEARCH BAR --- */
+    --color-search-bg: #1E2A47;
+    --color-search-placeholder: #FFFFFF;
+
+    /* --- PROFILE SECTION --- */
+    --color-profile-title: #FFFFFF;
+    --color-profile-user: #60ABFF;
+    --color-profile-info: #FFFFFF;
+    --color-profile-numbers: #FFFFFF;
+
+    /* --- LINKS --- */
+    --color-link-location: #FFFFFF;
+    --color-link-twitter: #FFFFFF;
+    --color-link-blog: #FFFFFF;
+    --color-link-company: #FFFFFF;
+}
+

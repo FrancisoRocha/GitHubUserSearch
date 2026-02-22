@@ -1,6 +1,6 @@
 
 /* --- LIGHT THEME --- */
-body.light{
+[data-theme="light"]{
     --color-bg: #F6F8FF;
     
     /* --- HEADER --- */
@@ -25,7 +25,7 @@ body.light{
 
 
 /* --- DARK THEME --- */
-body.dark{
+[data-theme="dark"]{
     --color-bg: #141D2F;
 
     /* --- HEADER --- */

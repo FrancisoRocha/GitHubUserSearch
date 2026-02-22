@@ -9,7 +9,6 @@ body{
     flex-direction: column;
     gap: 3.2rem;
     width: 100%;
-    /* background-color: rgba(100, 148, 237, 0.7); */
 }
 
 .header__container{
@@ -38,6 +37,246 @@ body{
     text-transform: uppercase;
     font-family: var(--space);
     color: var(--color-theme-text);
+    outline: none;
+}
+
+.theme:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.3rem rgba(255, 255, 255),  /* anillo blanco interior */
+              0 0 0 0.5rem #0079ff; /* borde azul exterior */
+    border-radius: 0.4rem;
+}
+
+/*----- SEARCH BAR -----*/
+.search__bar--container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.container__form {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-search-bg);
+  border-radius: 1.5rem;
+  padding: 1rem 1rem 1rem 2rem;
+  gap: 2rem;
+  box-shadow: 0rem 1.6rem 3rem -1rem rgba(70, 96, 187, 0.19);
+}
+
+.container__form:focus-within{
+  outline: 0.2rem solid var(--blue-500);
+  outline-offset: 0.4rem;
+}
+
+.icon__search {
+  width: 2rem;
+  height: 2rem;
+}
+
+label{
+    display: none;
+}
+
+#searchInput {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--color-profile-title);
+  font-size: 1.3rem;
+  font-family: var(--space);
+  font-weight: 500;
+  text-align: left;
+  line-height: 140%;
+}
+
+#searchInput::placeholder {
+  color: var(--color-theme-text);
+  font-family: var(--space);
+}
+
+.button__search {
+  background-color: var(--blue-500);
+  color: var(--neutral-0);
+  border: none;
+  border-radius: 1rem;
+  padding: 1.2rem 2rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: var(--space);
+  font-weight: bold;
+  text-align: left;
+  line-height: 150%;
+}
+
+.button__search:hover {
+  background-color: var(--blue-300);
+}
+
+.button__search:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255),  /* anillo blanco interior */
+              0 0 0 0.4rem #0079ff;                    /* borde azul exterior */
+}
+
+.noResults{
+    font-family: var(--space);
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-align: left;
+    color: var(--red-500);
+    display: none;
+}
+
+/*----- PROFILE SECTION -----*/
+.profile__section--container{
+    width: 100%;
+    min-height: 63rem;
+    padding: 3.2rem 2.4rem;
+    background: var(--color-search-bg);
+    border-radius: 1.5rem;
+}
+
+.header__info{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto auto auto;
+  gap: 2.4rem 3.7rem;
+}
+
+.img__header{
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.profile__section--info{
+  grid-column: 2;
+  grid-row: 1;
+  align-self: center;
+}
+
+.profile__bio{
+  grid-column: 1 / -1;
+  grid-row: 2;
+}
+
+.profile__stats{
+  grid-column: 1 / -1;
+  grid-row: 3;
+}
+
+.links__container{
+  grid-column: 1 / -1;
+  grid-row: 4;
+}
+
+.avatar__profile{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+}
+
+.profile__header{
+  display: flex;
+  flex-direction: column;
+}
+
+.name{
+  font-family: var(--space);
+  font-weight: bold;
+  font-size: 2.6rem;
+  text-align: left;
+  line-height: 120%;
+  color: var(--color-profile-title);
+}
+
+.user__name{
+  font-family: var(--space);
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: var(--blue-500);
+  text-align: left;
+  line-height: 150%;
+}
+
+.account__creation{
+  font-family: var(--space);
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: var(--color-profile-info);
+}
+
+
+.bio{
+  font-family: var(--space);
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: left;
+  line-height: 140%;
+  color: var(--color-profile-info);
+}
+
+.profile__stats{
+  height: 22.9rem;
+  margin: 2.4rem 0;
+  border-radius: 1rem;
+  padding: 1.6rem 2rem;
+  background-color: var(--color-stats-color);
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.repos,
+.followers,
+.following{
+  font-family: var(--space);
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--color-profile-info);
+}
+
+.number__repos,
+.number__followers,
+.number__following{
+  font-family: var(--space);
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-align: left;
+  line-height: 140%;
+  color: var(--color-profile-numbers);
+}
+
+/*----- LINKS -----*/
+
+.links__container{
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.location__link,
+.twitter__link,
+.blog__link,
+.company__link{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.location,
+#twitter,
+#blog,
+#company{
+  font-family: var(--space);
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: left;
+  line-height: 150%;
+  color: var(--color-links);
 }
 
 

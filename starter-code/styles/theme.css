@@ -15,14 +15,12 @@ body.light{
     --color-profile-bg: #FFFFFF;
     --color-profile-title: #2B3442;
     --color-profile-user: #0079FF;
+    --color-stats-color: #F6F8FF;
     --color-profile-info: #4B6A9B;
     --color-profile-numbers: #2B3442;
 
     /* --- LINKS --- */
-    --color-link-location: #4B6A9B;
-    --color-link-twitter: #4B6A9B;
-    --color-link-blog: #4B6A9B;
-    --color-link-company: #4B6A9B;
+    --color-links: #4B6A9B;
 }
 
 
@@ -32,7 +30,7 @@ body.dark{
 
     /* --- HEADER --- */
     --color-title: #FFFFFF;
-    --color-theme: #90A4D4;
+    --color-theme-text: #90A4D4;
 
     /* --- SEARCH BAR --- */
     --color-search-bg: #1E2A47;
@@ -42,12 +40,10 @@ body.dark{
     --color-profile-title: #FFFFFF;
     --color-profile-user: #60ABFF;
     --color-profile-info: #FFFFFF;
+    --color-stats-color: #141D2F;
     --color-profile-numbers: #FFFFFF;
 
     /* --- LINKS --- */
-    --color-link-location: #FFFFFF;
-    --color-link-twitter: #FFFFFF;
-    --color-link-blog: #FFFFFF;
-    --color-link-company: #FFFFFF;
+    --color-links: #FFFFFF;
 }
 

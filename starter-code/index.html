@@ -1,54 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <title>GitHub user search app</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/main.css">
-</head>
-<body class="light">
-
-
-  <div class="container">
-
-    <!-- HEADER -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <title>GitHub user search app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body class="light">
+    <div class="container">
+      <!-- HEADER -->
       <header class="header__container">
         <h1 class="logo__title">devfinder</h1>
-          <button class="theme">
-            Dark
-            <img src="./assets/light/icon-moon.svg" alt="Icon Thme" class="thme__icon">
-          </button>
+        <button class="theme">
+          Dark
+          <img
+            src="./assets/light/icon-moon.svg"
+            alt="Icon Thme"
+            class="thme__icon"
+          />
+        </button>
       </header>
 
       <!-- SEARCH BAR -->
       <div class="search__bar--container">
         <form class="container__form">
-          <img src="./assets/icon-search.svg" alt="icon search bar" class="icon__search">
+          <img
+            src="./assets/icon-search.svg"
+            alt="icon search bar"
+            class="icon__search"
+          />
           <label class="search" for="searchInput">Searchs</label>
-          <input type="text" placeholder="Search GitHub username…" name="searchInput" id="searchInput">
-          <button class="button__search">Search</button>
+          <input
+            type="text"
+            placeholder="Search GitHub username…"
+            name="searchInput"
+            id="searchInput"
+            required
+          />
+          <p class="noResults">No results</p>
+          <button type="submit" class="button__search">Search</button>
         </form>
       </div>
 
       <!-- PROFILE SECTION -->
       <div class="profile__section--container">
-        <img src="./assets/bitmap.png" alt="avatar" class="avatar__profile">
-
-        <div class="profile__section--info">
-
-          <!-- PROFILE HEADER -->
-          <div class="profile__header">
-            <div class="user__details">
-              <h3 class="name">The Octocat</h3>
-              <p class="user__name">@<span class="user">octocat</span></p>
-            </div>
-            <p class="account__creation">Joined 25 Jan 2011</p>
+        <!-- HEADER INFO -->
+        <div class="header__info">
+          <div class="img__header">
+            <img
+              src="./assets/bitmap.png"
+              alt="avatar"
+              class="avatar__profile"
+            />
           </div>
 
+          <div class="profile__section--info">
+            <!-- PROFILE HEADER -->
+            <div class="profile__header">
+              <div class="user__details">
+                <h3 class="name">The Octocat</h3>
+                <p class="user__name">@<span class="user">octocat</span></p>
+              </div>
+              <p class="account__creation">Joined 25 Jan 2011</p>
+            </div>
+          </div>
           <!-- BIOGRAFIA -->
           <div class="profile__bio">
             <p class="bio">This profile has no bio</p>
@@ -73,28 +100,59 @@
           <!-- LINKS -->
           <div class="links__container">
             <div class="location__link">
-              <img src="./assets/light/icon-location-light.svg" alt="icon location" class="icon location">
+              <img
+                src="./assets/light/icon-location-light.svg"
+                alt="icon location"
+                class="icon location"
+              />
               <p class="location">San Francisco</p>
             </div>
             <div class="twitter__link">
-              <img src="./assets/light/icon-twitter-light.svg" alt="icon twitter" class="icon twitter">
-              <p class="twitter">Not Available</p>
+              <img
+                src="./assets/light/icon-twitter-light.svg"
+                alt="icon twitter"
+                class="icon twitter"
+              />
+              <a
+                href="https://location.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                id="twitter"
+                class="twitter"
+                >Not Available</a
+              >
             </div>
             <div class="blog__link">
-              <img src="./assets/light/icon-blog-light.svg" alt="icon blog" class="icon blog">
-              <a href="https://github.blog" target="_blank" rel="noopener noreferrer" id="blog">https://github.blog</a>
+              <img
+                src="./assets/light/icon-blog-light.svg"
+                alt="icon blog"
+                class="icon blog"
+              />
+              <a
+                href="https://github.blog"
+                target="_blank"
+                rel="noopener noreferrer"
+                id="blog"
+                >https://github.blog</a
+              >
             </div>
             <div class="company__link">
-              <img src="./assets/light/icon-company-light.svg" alt="icon company" class="icon company">
-              <a href="https://github.com/github" target="_blank" rel="noopener noreferrer" id="company">@github</a>
+              <img
+                src="./assets/light/icon-company-light.svg"
+                alt="icon company"
+                class="icon company"
+              />
+              <a
+                href="https://github.com/github"
+                target="_blank"
+                rel="noopener noreferrer"
+                id="company"
+                >@github</a
+              >
             </div>
           </div>
-
         </div>
       </div>
-
     </div>
-
-
-</body>
+  </body>
 </html>

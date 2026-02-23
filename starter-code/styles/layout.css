@@ -13,7 +13,7 @@
     }
 
     .profile__section--container {
-        min-height: 46rem;
+        min-height: auto;
         padding: 4.8rem 3.2rem;
     }
 

@@ -19,6 +19,10 @@
     --color-profile-info: #4B6A9B;
     --color-profile-numbers: #2B3442;
 
+    /*----- USER NO FOUND -----*/
+    --color-message-title: #2B3442;
+    --color-message-text: #697C9A;
+
     /* --- LINKS --- */
     --color-links: #4B6A9B;
 }
@@ -35,6 +39,10 @@
     /* --- SEARCH BAR --- */
     --color-search-bg: #1E2A47;
     --color-search-placeholder: #FFFFFF;
+
+    /*----- USER NO FOUND -----*/
+    --color-message-title: #ffffff;
+    --color-message-text: #90A4D4;
 
     /* --- PROFILE SECTION --- */
     --color-profile-title: #FFFFFF;
